@@ -1,0 +1,29 @@
+{
+  "name": "personal-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "classnames": "^2.2.5",
+    "material-ui": "^0.19.4",
+    "moment": "^2.19.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.0.0",
+    "react-ga": "^2.3.5",
+    "react-images": "^0.5.11",
+    "react-particles-js": "^2.1.0",
+    "react-scripts": "^1.0.17",
+    "react-scrollable-anchor": "^0.5.0",
+    "react-transition-group": "^1.2.1",
+    "react-visibility-sensor": "^3.11.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && aws s3 sync build/ s3://mingma.me"
+  }
+}
